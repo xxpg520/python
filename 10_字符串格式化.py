@@ -8,3 +8,9 @@ class_num = 57
 avg_salary = 16781
 message = "Python大数据学科，北京%s期，毕业平均工资：%s" % (class_num,avg_salary)
 print(message)
+
+name = "传智播客"
+set_up_year = 2006
+stock_price = 19.99
+message = "我是：%s，我成立于：%d，我今天的股价是：%f" % (name, set_up_year, stock_price)
+print(message)
