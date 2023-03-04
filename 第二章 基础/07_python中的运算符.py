@@ -35,7 +35,7 @@ num /= 2
 print("num /= 2: ", int(num))
 
 num = 3
-# num = num求余
+# num = num除以2的余数
 num %= 2
 print("num %= 2: ", num)
 
