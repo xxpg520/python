@@ -18,19 +18,33 @@ print("2 ** 2 = ", 2 ** 2)
 num = 1 + 2 + 3
 # 复合复制运算符  +=
 num = 1
-num += 1 # num = num + 1
+# num = num + 1
+num += 1
 print("num += 1: ", num)
+
+# num = num - 1
 num -= 1
 print("num -= 1: ", num)
+
+# num = num * 4
 num *= 4
 print("num *= 4: ", num)
+
+# num = num ÷ 2
 num /= 2
 print("num /= 2: ", int(num))
+
 num = 3
+# num = num求余
 num %= 2
 print("num %= 2: ", num)
+
+# num = num的2次方
 num **= 2
 print("num **= 2: ", num)
+
+
 num = 9
+# num = num除以2的整数
 num //= 2
 print("num //= 2: ", num)
