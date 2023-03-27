@@ -1,7 +1,8 @@
 """
 课后练习 升职加薪
 """
-my_dict = {
+# 定义字典
+info_dict = {
     "王力鸿": {
         "部门":"科技部",
         "工资":3000,
@@ -28,7 +29,19 @@ my_dict = {
         "级别": 2
     }
 }
-for key in my_dict:
-    print(f"{key}")
-    for i in my_dict[key]:
-        print(i)
+print(f"员工在升职加薪前的结果：{info_dict}")
+# for循环遍历字典
+for name in info_dict:
+    # if条件判断符合条件的员工
+    if info_dict[name]["级别"] == 1:
+        # 升职加薪操作
+        # 获取到员工的信息字典
+        employee_info_dict = info_dict[name]
+        # 修改员工的信息
+        employee_info_dict["级别"] = 2 #级别+1
+        employee_info_dict["工资"] += 1000 # 工资+1000
+        # 将员工的信息更新回info_dict
+        info_dict[name] = employee_info_dict
+
+# 输出结果
+print(f"对员工进行升职加薪后的结果：{info_dict}")
