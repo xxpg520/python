@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b0b2010-eeb6-420d-9199-5a3185bb9d92" name="变更" comment="Merge remote-tracking branch 'origin/master'">
-      <change afterPath="$PROJECT_DIR$/第八章 Python文件操作/02_文件的读取操作.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/第八章 Python文件操作/01_文件编码概念.md" beforeDir="false" afterPath="$PROJECT_DIR$/第八章 Python文件操作/01_文件编码概念.md" afterDir="false" />
-    </list>
+    <list default="true" id="2b0b2010-eeb6-420d-9199-5a3185bb9d92" name="变更" comment="文件读取操作" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,13 +132,35 @@
       <option name="project" value="LOCAL" />
       <updated>1680093005388</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1680101557148</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680101557148</updated>
+    </task>
+    <task id="LOCAL-00008" summary="文件读取操作">
+      <created>1680101577749</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680101577749</updated>
+    </task>
+    <task id="LOCAL-00009" summary="文件读取操作">
+      <created>1680101591600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680101591600</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除文件 .idea" />
     <MESSAGE value="文件的编码" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="文件读取操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件读取操作" />
   </component>
 </project>
