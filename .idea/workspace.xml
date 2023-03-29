@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b0b2010-eeb6-420d-9199-5a3185bb9d92" name="变更" comment="文件读取操作">
-      <change beforePath="$PROJECT_DIR$/第八章 Python文件操作/01_文件编码概念.md" beforeDir="false" afterPath="$PROJECT_DIR$/第八章 Python文件操作/01_文件编码概念.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第八章 Python文件操作/03_文件读取的课后练习.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="C:\Users\xxpg\Desktop\python" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.03_文件读取的课后练习">
     <configuration name="02_文件的读取操作" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,8 +78,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="03_文件读取的课后练习" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/第八章 Python文件操作" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/第八章 Python文件操作/03_文件读取的课后练习.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.03_文件读取的课后练习" />
         <item itemvalue="Python.02_文件的读取操作" />
       </list>
     </recent_temporary>
@@ -177,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680101900430</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="文件读取操作">
+      <created>1680101942032</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680101942032</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
