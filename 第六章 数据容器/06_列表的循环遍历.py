@@ -17,7 +17,7 @@ def list_while_func():
         element = my_list[index]
         print(f"列表的元素：{element}")
 
-        # 只管重要 将循环变量（index)每一次循环都+1
+        # 至关重要 将循环变量（index)每一次循环都+1
         index += 1
 list_while_func()
 
