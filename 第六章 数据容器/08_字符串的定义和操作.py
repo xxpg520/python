@@ -38,7 +38,7 @@ print(f"字符串{my_str}中it出现的次数是：{count}")
 
 # 统计字符串的长度，len
 num = len(my_str)
-print(f"字符串{my_str}的昌都市：{num}")
+print(f"字符串{my_str}的长度是：{num}")
 
 # while 遍历
 my_str = "黑马程序员"
