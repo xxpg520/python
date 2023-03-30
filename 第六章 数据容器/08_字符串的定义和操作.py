@@ -7,7 +7,7 @@ value = my_str[2]
 value2 = my_str[-16]
 print(f"从字符串{my_str}取下标为2的元素，值是：{value},取下标为-16的元素，值是{value2}")
 
-# my_str[2] = "H"
+# my_str[2] = "H" # 不支持修改
 
 # index 查找 方法
 value = my_str.index("and")
