@@ -21,7 +21,7 @@
 # __main__变量
 # from my_module1 import test
 
-# __all__变量
+# __all__变量 用来控制列表中被导入的内容
 from my_module1 import *
 test_a(1, 2)
 test_b(1, 2)
