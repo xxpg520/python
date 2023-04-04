@@ -23,3 +23,7 @@ def substr(s, x, y):
     :return: 切片完成后的字符串
     """
     return s[x:y:1]
+
+if __name__ == '__main__':
+    print(str_reverse("黑马程序员"))
+    print(substr("黑马程序员", 1, 3))

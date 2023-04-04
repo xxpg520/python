@@ -10,3 +10,12 @@ flie_util.py (文件处理相关工具, 内含:)
     函数: print_file_info(file_name), 接收传入文件的路径, 打印文件的全部内容, 如文件不存在则捕获异常, 输出提示信息,通过finally关闭文件对象
     函数: append_to_file(file_name, data), 接收文件路径以及传入数据,将数据追加写入到文件中
 """
+import my_utils.str_util
+from my_utils import flie_util
+
+print(my_utils.str_util.str_reverse("黑马程序员"))
+print(my_utils.str_util.substr("itheima", 0, 4))
+
+# flie_util.print_file_imfo("d:/bill.txt")
+flie_util.append_to_file("d:/test_append.txt", "追加成功")
+flie_util.print_file_imfo("d:/test_append.txt")
