@@ -11,11 +11,12 @@ flie_util.py (文件处理相关工具, 内含:)
     函数: append_to_file(file_name, data), 接收文件路径以及传入数据,将数据追加写入到文件中
 """
 import my_utils.str_util
-from my_utils import flie_util
+print(my_utils.str_util.str_reverse("今天天气好好"))
+from my_utils.str_util import substr
+print(substr("今天的天气还真不错", 3, 6))
 
-print(my_utils.str_util.str_reverse("黑马程序员"))
-print(my_utils.str_util.substr("itheima", 0, 4))
+import my_utils.flie_util
+my_utils.flie_util.print_file_info("d:/bill.txt")
+from my_utils.flie_util import append_to_file
+append_to_file("d:/test.txt", "我是新的文件")
 
-# flie_util.print_file_imfo("d:/bill.txt")
-flie_util.append_to_file("d:/test_append.txt", "追加成功")
-flie_util.print_file_imfo("d:/test_append.txt")
