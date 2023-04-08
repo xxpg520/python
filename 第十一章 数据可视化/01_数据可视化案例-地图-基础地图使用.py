@@ -14,7 +14,7 @@ data = [
     ("广东省", 499)
 ]
 # 添加数据
-map.add("测试地图", data, "china")
+map.add("测试地图", data,)
 # 设置全局选项
 map.set_global_opts(
     visualmap_opts=VisualMapOpts(
