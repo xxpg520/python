@@ -12,4 +12,3 @@ class Student:
 stu = Student()
 stu.name = "周杰轮"
 stu.say_hi()
-print("好了吗？")
