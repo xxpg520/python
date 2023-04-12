@@ -4,8 +4,8 @@
 
 # 定义一个带有成员方法的类
 class Student:
-    name = None
-
+    name = None    # 定义成员变量
+# 定义成员方法
     def say_hi(self):
         print(f"大家好啊,我是{self.name},欢迎大家多多关照")
 
