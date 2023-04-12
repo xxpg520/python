@@ -8,7 +8,7 @@ class Student:
 
 # 2.创建一个对象（类比生活中：打印一张登记表）
 stu1 = Student()
-# 3.对象属性进行复制（类比生活中：填写表单）
+# 3.对象属性进行赋值（类比生活中：填写表单）
 stu1.name = "林军杰"
 stu1.gender = "男"
 stu1.nationality = "中国"
