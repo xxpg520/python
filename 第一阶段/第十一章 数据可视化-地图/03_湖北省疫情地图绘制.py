@@ -11,7 +11,7 @@ data = f.read()
 f.close()
 # 将json转换成python字典
 data_dict = json.loads(data)
-# 获取河南省数据
+# 获取湖北省数据
 cities_data = data_dict["areaTree"][0]["children"][6]["children"]
 # 准备数据为元组并放入list
 data_list = []
@@ -19,7 +19,7 @@ for city_data in cities_data:
     city_name = city_data["name"] + "市"
     city_confirm = city_data["total"]["confirm"]
     data_list.append((city_name, city_confirm))
-
+print(data_list)
 # 手动添加恩施，神农架数据
 data_list.append(("恩施土家族苗族自治州", 252))
 data_list.append(("神农架林区", 11))
