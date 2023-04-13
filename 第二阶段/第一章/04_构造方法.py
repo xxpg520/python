@@ -8,6 +8,7 @@ class Student:
     name = None
     age = None
     tel = None
+
     # 在构造方法内定义成员变量，需要使用self关键字
     def __init__(self, name, age, tel):
         self.name = name        # 姓名
