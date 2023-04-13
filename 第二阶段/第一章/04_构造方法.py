@@ -14,7 +14,7 @@ class Student:
         self.age = age          # 年龄
         self.tel = tel          # 电话
         print("Student类创建了一个类对象")
-stu = Student("周杰伦",31,"18500006666")
+stu = Student("周杰伦", 31, "18500006666")
 print(stu.name)
 print(stu.age)
 print(stu.tel)
