@@ -6,7 +6,7 @@
 # 设计一个类，用来描述手机
 class Phone:
     # 提供私有成员变量：__is_5g_enable
-    __is_5g_enable = False      # 5g状态
+    __is_5g_enable = True      # 5g状态
 
     # 提供私有成员方法：__check_5g()
     def __check_5g(self):
