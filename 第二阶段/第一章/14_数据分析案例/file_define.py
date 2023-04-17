@@ -52,5 +52,3 @@ if __name__ == '__main__':
 
     for l in list2:
         print(l)
-
-

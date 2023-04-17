@@ -10,6 +10,5 @@ class Record:
         self.money = money              # 订单金额
         self.province = province        # 销售省份
 
-
     def __str__(self):
         return f"{self.date}, {self.order_id}, {self.money}, {self.province}"

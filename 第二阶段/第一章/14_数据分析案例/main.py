@@ -9,6 +9,9 @@
 """
 from file_define import FileReader, JsonFileReader,TextFileReader
 from data_define import Record
+from pyecharts.charts import Bar    # 导入柱状图对象
+from pyecharts.options import *     # 导入可选选项
+from pyecharts.globals import ThemeType     # 导入主题
 
 text_file_reader = TextFileReader("D:/2011年1月销售数据.txt")
 json_file_reader = JsonFileReader("D:/2011年2月销售数据JSON.txt")
@@ -27,4 +30,13 @@ for record in all_data:
         data_dict[record.date] += record.money
     else:
         data_dict[record.date] = record.money
-print(data_dict)
+
+# 可视化图标开发
+bar = Bar(init_opts=InitOpts(theme=ThemeType.LIGHT))
+
+bar.add_xaxis(list(data_dict.keys()))           # 添加x轴数据
+bar.add_yaxis("销售额", list(data_dict.values()), label_opts=LabelOpts(is_show=False))      # 添加y轴数据
+bar.set_global_opts(
+    title_opts=TitleOpts(title="每日销售额")
+)
+bar.render("每日销售额柱状图.html")
