@@ -1,11 +1,13 @@
-## SQL 基本语法
-### DDL——库管理
+# SQL 基本语法
+## 数据定义：DDL (Data definition Language)
+### 库管理
 **显示数据库** `show databases;`<br>
 **使用数据库** `use 数据库名称`<br>
 **创建数据库** `create database 数据库名称 [charset UTF8];`<br>
 **删除数据库** `drop database 数据库名称;`<br>
 **查看当前使用数据库**`select database();`
-### DDL——表管理
+---
+### 表管理
 **查看有那些表** `show tables;` 注意:需要先选择数据库<br> 
 
 **创建表** 
@@ -16,7 +18,7 @@ create table 表名称(
     ……
 );
 ```
-**——列类型有：**
+**表管理——列类型有：**
 
 |     列类型     |        代表        |
 |:-----------:|:----------------:|
