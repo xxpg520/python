@@ -65,6 +65,7 @@ updata student set name = '张学油' where id = 4;
 ![img_7.png](img_7.png)
 
 列子:将整张表中所有的name列都改成 王力鸿
+
 ![img_9.png](img_9.png)
 ```commandline
 updata student set name = '王力鸿'
