@@ -5,5 +5,10 @@
 insert into 表(列1,列2,列3……) values(值1,值2,值3)
 ```
 例:
-`insert into student(id) values(1),(2),(3);`
-![img.png](img.png)
+```
+insert into student(id) values(1),(2),(3);
+```
+---
+![img.png](img.png)<br>
+
+---
