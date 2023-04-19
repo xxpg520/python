@@ -68,7 +68,7 @@ updata student set name = '张学油' where id = 4;
 
 ![img_9.png](img_9.png)
 ```commandline
-updata student set name = '王力鸿'
+updata student set name = '王力鸿';
 ```
 ![img_10.png](img_10.png)
 
