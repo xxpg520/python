@@ -39,19 +39,19 @@ delete from student where id = 1;
 
 例子 删除id小于4的行
 ```commandline
-delete from student wher id < 4;
+delete from student where id < 4;
 ```
 ![img_4.png](img_4.png)
 
 例子 删除id大于6的行
-```commandline
+```commandline 
 delete from student where id > 6;
 ```
 ![img_5.png](img_5.png)
 
 删除整张表内数据---不填写条件判断
 ```commandline
-delete from setdent;
+delete from student;
 ```
 **更新数据--语法**
 ```commandline
