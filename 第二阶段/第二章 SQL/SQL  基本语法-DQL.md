@@ -1,5 +1,9 @@
 # SQL 基本语法
 ## 数据查询：DQL (Data Query Language)
+**基本语法**
+```commandline
+select 字段列表|* from 表
+```
 **例子——查询整个表中数据:**
 ```commandline
 select * from student;
@@ -21,18 +25,18 @@ select * from student where gender = '男';
 ```
 ![img_14.png](img_14.png)<br>
 ## 分组聚合
-**语法**
+**基本语法**
 ```
 select 字段|聚合函数 from 表 [where 条件] group by 列;
 ```
-例子：按照性别gender，统计男、女年龄平均值<br>
+例子：按照性别gender分组，统计男、女年龄平均值<br>
 ![img_15.png](img_15.png)
 ```commandline
 select gender, avg(age) from student group by gender;
 ```
 输出结果为：<br>
 ![img_16.png](img_16.png)<br>
-也可以展示多个聚合
+也可以展示多个分组聚合
 ```commandline
 select gender,sum(age),max(age),min(age),count(*), avg(age) from student group by gender;
 ```
