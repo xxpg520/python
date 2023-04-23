@@ -42,3 +42,36 @@ select gender,sum(age),max(age),min(age),count(*), avg(age) from student group b
 ```
 输出结果：<br>
 ![img_17.png](img_17.png)<br>
+## 排序
+**基本语法**
+```commandline
+select 列|聚合函数|* from 表
+where……
+group by……
+order by……[asc | desc]
+```
+例子 - 按照age从大到小排序 <br>
+```commandline
+select * from student where age > 20 order by age desc; 
+```
+![img_19.png](img_19.png)<br>
+## 结果分页限制
+**基本语法**
+```commandline
+select 列|聚合函数|* from 表
+where……
+group by……
+order by……[asc | desc]
+limit n[, m]
+```
+**例子**<br>
+![img_23.png](img_23.png)<br>
+限制输出5条数据
+```commandline
+select * from student limit 5;
+```
+![img_21.png](img_21.png)<br>
+```commandline
+select * from student limit 10,5; # 从11开始取5条输出
+```
+![img_22.png](img_22.png)<br>
