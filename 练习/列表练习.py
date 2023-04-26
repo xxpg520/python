@@ -94,3 +94,28 @@ print(scenic_spot)
 """
 sum = len(names)
 print(f"共邀请了:{sum}嘉宾")
+
+"""
+练习3-10：尝试使用各个函数 想想可存储到列表中的东
+西，如山川、河流、国家、城市、语言或你喜欢的任何东西。
+编写一个程序，在其中创建一个包含这些元素的列表，然后，
+对于本章介绍的每个函数，都至少使用一次来处理这个列表。
+"""
+Fruits = ['Banana', 'Apple', 'Mango', 'litchi', 'strawberry']
+print(Fruits)
+Fruits.reverse()
+print(Fruits)
+Fruits.sort()
+print(Fruits)
+Fruits.sort(reverse=True)
+print(Fruits)
+Fruits_1 = Fruits.pop(1)
+print(Fruits)
+print(Fruits_1)
+Fruits.insert(1, 'litchi')
+print(Fruits)
+del Fruits[0]
+print(Fruits)
+print(len(Fruits))
+
+
