@@ -4,25 +4,23 @@
 3-2 问候语： 继续使用练习3-1中的列表，但不打印每个朋友的姓名，而为每人打印一条消息。每条消息都包含相同的问候语，但抬头为相应朋友的姓名。
 3-4 嘉宾名单 ：如果你可以邀请任何人一起共进晚餐（无论是在世的还是故去的），你会邀请哪些人？请创建一个列表，其中包含至少3个你想邀请的人；然后，使用这个列表打印消息，邀请这些人来与你共进晚餐。
 """
-names = ['张无忌','周芷若','阳顶天','谢逊']
+names = ['张无忌', '周芷若', '阳顶天', '谢逊']
 food = "一起吃饭吧！"
-print(food+names[0])
-print(food+names[1])
-print(food+names[2])
-print(food+names[3])
-
-
+print(food + names[0])
+print(food + names[1])
+print(food + names[2])
+print(food + names[3])
 
 # 3-5 修改嘉宾名单 ：你刚得知有位嘉宾无法赴约，因此需要另外邀请一位嘉宾。
 # 以完成练习3-4时编写的程序为基础，在程序末尾添加一条print 语句，指出哪位嘉宾无法赴约。
 # 修改嘉宾名单，将无法赴约的嘉宾的姓名替换为新邀请的嘉宾的姓名。
 # 再次打印一系列消息，向名单中的每位嘉宾发出邀请。
-print(names[2]+'因为走火入魔不能来吃饭')
+print(names[2] + '因为走火入魔不能来吃饭')
 names[2] = '张三丰'
-print(food+names[0])
-print(food+names[1])
-print(food+names[2])
-print(food+names[3])
+print(food + names[0])
+print(food + names[1])
+print(food + names[2])
+print(food + names[3])
 
 """
 3-6 添加嘉宾 ：你刚找到了一个更大的餐桌，可容纳更多的嘉宾。请想想你还想邀请哪三位嘉宾。
@@ -58,3 +56,41 @@ not_names = names.pop(2)
 print(f"尊敬的：{not_names} ,无法邀请您来共进晚餐")
 print(f"尊敬的：{names[0]}，您仍在晚宴邀请之列")
 print(f"尊敬的：{names[1]}，您仍在晚宴邀请之列")
+
+"""
+练习3-8：放眼世界 想出至少5个你渴望去旅游的地方。
+将这些地方存储在一个列表中，并确保其中的元素不是按字母
+顺序排列的。
+按原始排列顺序打印该列表。不要考虑输出是否整洁的问题，
+只管打印原始Python列表练习
+"""
+scenic_spot = ['Hawaii', 'Iceland', 'Tokyo', 'London', 'Paris']
+print(scenic_spot)
+# 使用sorted() 按字母顺序打印这个列表，同时不要修改它。
+print(sorted(scenic_spot))
+# 再次打印该列表，核实排列顺序未变。
+print(scenic_spot)
+# 使用sorted() 按与字母顺序相反的顺序打印这个列表，同时不要修改它
+print(sorted(scenic_spot, reverse=True))
+# 再次打印该列表，核实排列顺序未变
+print(scenic_spot)
+# 使用reverse() 修改列表元素的排列顺序。打印该列表，核实排列顺序确实变了。
+scenic_spot.reverse()
+print(scenic_spot)
+# 使用reverse() 再次修改列表元素的排列顺序。打印该列表，核实已恢复到原来的排列顺序。
+scenic_spot.reverse()
+print(scenic_spot)
+# 使用sort() 修改该列表，使其元素按字母顺序排列。打印该列表，核实排列顺序确实变了。
+scenic_spot.sort()
+print(scenic_spot)
+# 使用sort() 修改该列表，使其元素按与字母顺序相反的顺序排列。打印该列表，核实排列顺序确实变了
+scenic_spot.sort(reverse=True)
+print(scenic_spot)
+
+"""
+练习3-9：晚餐嘉宾 在完成练习3-4~练习3-7时编写的程序之
+一中，使用len() 打印一条消息，指出你邀请了多少位嘉宾来
+共进晚餐。
+"""
+sum = len(names)
+print(f"共邀请了:{sum}嘉宾")
