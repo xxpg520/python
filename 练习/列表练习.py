@@ -57,6 +57,9 @@ print(f"尊敬的：{not_names} ,无法邀请您来共进晚餐")
 print(f"尊敬的：{names[0]}，您仍在晚宴邀请之列")
 print(f"尊敬的：{names[1]}，您仍在晚宴邀请之列")
 
+fruits = ['apple', 'banana', 'pear', 'litchi', 'mango']
+fruits.insert(0, '')
+
 """
 练习3-8：放眼世界 想出至少5个你渴望去旅游的地方。
 将这些地方存储在一个列表中，并确保其中的元素不是按字母
@@ -92,8 +95,8 @@ print(scenic_spot)
 一中，使用len() 打印一条消息，指出你邀请了多少位嘉宾来
 共进晚餐。
 """
-sum = len(names)
-print(f"共邀请了:{sum}嘉宾")
+sum_names = len(names)
+print(f"共邀请了:{sum_names}嘉宾")
 
 """
 练习3-10：尝试使用各个函数 想想可存储到列表中的东
@@ -118,4 +121,38 @@ del Fruits[0]
 print(Fruits)
 print(len(Fruits))
 
+# # 超出索引范围示范
+# f = []
+# print(f[-1])
 
+print(Fruits.index('Banana'))
+
+even_numbers = list(range(21))
+print(even_numbers)
+# 练习4-3：数到20 使用一个for 循环打印数1～20（含）。
+for i in range(21):
+    print(i)
+"""
+练习4-4：一百万 创建一个包含数1～1 000 000的列表，再使
+用一个for 循环将这些数打印出来。（如果输出的时间太长，
+按Ctrl + C停止输出或关闭输出窗口。
+"""
+# list_number = list(range(1,1000001))
+# for i in list_number:
+#     print(i)
+"""
+练习4-5：一百万求和 创建一个包含数1～1 000 000的列
+表，再使用min() 和max() 核实该列表确实是从1开始、到1
+000 000结束的。另外，对这个列表调用函数sum() ，看看
+Python将一百万个数相加需要多长时间
+"""
+list_number = list(range(1, 1000001))
+print(min(list_number))
+print(max(list_number))
+print(type(list_number))
+print(sum(list_number))
+
+sum_list_number = 0
+for number in list_number:
+    sum_list_number += number
+print(sum_list_number)
