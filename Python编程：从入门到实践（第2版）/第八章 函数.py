@@ -53,29 +53,124 @@
 # describe_city('kunming', 'china')
 # describe_city('tokyo', 'japan')
 # describe_city('new york', 'america')
-
-"""
-练习8-6：城市名
-编写一个名为city_country() 的函数，它接受城市的名称及其所属的国家。这个函数应返回一个格式类似于下面的字符串：
-"Santiago, Chile"
-至少使用三个城市国家对来调用这个函数，并打印它返回的值。
-"""
-def city_country(city, country):
-    full_city_country = f"{city.title()} in the:{country.title()}"
-    return full_city_country
-
-
-print(city_country('santigo', 'chile'))
-"""
-练习8-7：专辑 
-编写一个名为make_album() 的函数，它创建一个᧿述音乐专辑的字典。这个函数应接受歌手的名字和专辑名，并返回一个包含这两项信息的字典。
-使用这个函数创建三个表示不同专辑的字典，并打印每个返回的值，以核实字典正确地存储了专辑的信息。
-    给函数make_album() 添加一个默认值为None 的可选形参，以便存储专辑包含的歌曲数。如果调用这个函数时指定了歌曲数，
-    就将该值添加到表示专辑的字典中。调用这个函数，并至少在一次调用中指定专辑包含的歌曲数.
-"""
-
-"""
-练习8-8：用户的专辑 
-在为完成练习8-7编写的程序中，编写一个while 循环，让用户输入专辑的歌手和名称。获取这些信息后，
-使用它们来调用函数make_album() 并将创建的字典打印出来。在这个while 循环中，务必提供退出途径。
-"""
+#
+# """
+# 练习8-6：城市名
+# 编写一个名为city_country() 的函数，它接受城市的名称及其所属的国家。这个函数应返回一个格式类似于下面的字符串：
+# "Santiago, Chile"
+# 至少使用三个城市国家对来调用这个函数，并打印它返回的值。
+# """
+# def city_country(city, country):
+#      f"{city}, {country}"
+#     return f"{city}.title(), {country}.title()"
+#
+# city_country_1 = city_country('santiago', 'chile')
+# city_country_2 = city_country('new york', 'america')
+# city_country_3 = city_country('tokyo', 'japan')
+#
+# print(city_country_1)
+# print(city_country_2)
+# print(city_country_3)
+#
+# """
+# 练习8-7：专辑
+# 编写一个名为make_album() 的函数，它创建一个描述音乐专辑的字典。这个函数应接受歌手的名字和专辑名，并返回一个包含这两项信息的字典。
+# 使用这个函数创建三个表示不同专辑的字典，并打印每个返回的值，以核实字典正确地存储了专辑的信息。
+#     给函数make_album() 添加一个默认值为None 的可选形参，以便存储专辑包含的歌曲数。如果调用这个函数时指定了歌曲数，
+#     就将该值添加到表示专辑的字典中。调用这个函数，并至少在一次调用中指定专辑包含的歌曲数.
+# """
+# def make_album(singer, album, music_number=None):
+#     dict_album = {"singer": singer,"album": album}
+#     if music_number is not None:
+#         dict_album["music_number"] = music_number
+#     return dict_album
+# album1 = make_album('周杰伦', '七里香')
+# album2 = make_album('林俊杰', '江南', 3)
+# album3 = make_album('张韶涵', '你的微笑', 7)
+#
+# print(album1,album2,album3)
+# print(album2['singer'])
+# print(album3['music_number'])
+# #
+# #
+# """
+# 练习8-8：用户的专辑
+# 在为完成练习8-7编写的程序中，编写一个while 循环，让用户输入专辑的歌手和名称。获取这些信息后，
+# 使用它们来调用函数make_album() 并将创建的字典打印出来。在这个while 循环中，务必提供退出途径。
+# """
+# while True:
+#     singer = input("请输入歌手名字：")
+#     if singer == 'q':
+#         break
+#     album = input("请输入歌手专辑：")
+#     if album == 'q':
+#         break
+#     print(make_album(singer, album)
+# )
+#
+# """
+# 练习8-9：消息
+# 创建一个列表，其中包含一系列简短的文本消息。将该列表传递给一个名为show_messages() 的函数，这个函数会打印列表中的每条文本消息。
+# """
+# """定义函数，将收到的列表打印，返回列表"""
+# def show_messages(message):
+#     for message in message:
+#         print(f"show_messages函数:{message}")
+# """创建列表"""
+# list1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven','eight', 'nine']
+# """调用函数，将列表传参"""
+# show_messages(list1)
+# """
+# 练习8-10：发送消息
+# 在你为完成练习8-9而编写的程序中，编写一个名为send_messages() 的函数，将每条消息都打印出来并移到一个名为sent_messages 的列表中。
+# 调用函数send_messages() ，再将两个列表都打印出来，确认正确地移动了消息。
+# """
+# # 定义函数，将得到的列表内容打印
+# def show_messages(message):
+#     for message in message:
+#         print(f"show_messages函数:{message}")
+#
+# # 定义函数，用来将 列表1 的内容移动到 列表2
+# def send_messages(列表1, 列表2):
+#     while 列表1:
+#         """移动列表1 下标为0的元素到message变量中"""
+#         message = 列表1.pop(0)        # pop(0)表示正序移动，第二次循环因为0号元素已经移走，原先的1号元素则成为0号元素
+#         print(f"移动:{message} 到列表2")     # 提示移动
+#         列表2.append(message)         # 将变量message中的元素添加到列表2中
+#
+# # 创建2个列表，list1有内容，list2无内容
+# list1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven','eight', 'nine']
+# list2 = []
+#
+# # 调用函数
+# show_messages(list1)            # 将list1内容打印
+# send_messages(list1, list2)     # 将list1内容移动到list2
+#
+# print(list1)
+# print(list2)
+#
+# """
+# 练习8-11：消息归档
+# 修改你为完成练习8-10而编写的程序，在调用函数send_messages() 时，向它传递消息列表的副本。
+# 调用函数send_messages() 后，将两个列表都打印出来，确认保留了原始列表中的消息。
+# """
+# # 定义函数，将得到的列表内容打印
+# def show_messages(message):
+#     for message in message:
+#         print(f"show_messages 函数:{message}")
+#
+# # 定义函数，用来将 list_one 的内容移动到 list_two
+# def send_messages(list_one, list_two):
+#     while list_one:
+#         """移动列表1 下标为0的元素到message变量中"""
+#         message = list_one.pop()                # pop(0)表示正序移动，第二次循环因为0号元素已经移走，原先的1号元素则成为0号元素
+#         print(f"移动:{message} 到 列表2")      # 提示移动
+#         list_two.append(message)                 # 将变量message中的元素添加到列表2中
+#     print(list_one)
+#     print(list_two)
+# # 创建2个列表，list1有内容，list2无内容
+# list1 = ['one', 'two', 'three',]
+# list2 = []
+# # 调用函数
+# show_messages(list1)
+# send_messages(list1, list2)
