@@ -149,28 +149,30 @@
 # print(list1)
 # print(list2)
 #
-# """
-# 练习8-11：消息归档
-# 修改你为完成练习8-10而编写的程序，在调用函数send_messages() 时，向它传递消息列表的副本。
-# 调用函数send_messages() 后，将两个列表都打印出来，确认保留了原始列表中的消息。
-# """
-# # 定义函数，将得到的列表内容打印
-# def show_messages(message):
-#     for message in message:
-#         print(f"show_messages 函数:{message}")
-#
-# # 定义函数，用来将 list_one 的内容移动到 list_two
-# def send_messages(list_one, list_two):
-#     while list_one:
-#         """移动列表1 下标为0的元素到message变量中"""
-#         message = list_one.pop()                # pop(0)表示正序移动，第二次循环因为0号元素已经移走，原先的1号元素则成为0号元素
-#         print(f"移动:{message} 到 列表2")      # 提示移动
-#         list_two.append(message)                 # 将变量message中的元素添加到列表2中
-#     print(list_one)
-#     print(list_two)
-# # 创建2个列表，list1有内容，list2无内容
-# list1 = ['one', 'two', 'three',]
-# list2 = []
-# # 调用函数
-# show_messages(list1)
-# send_messages(list1, list2)
+"""
+练习8-11：消息归档
+修改你为完成练习8-10而编写的程序，在调用函数send_messages() 时，向它传递消息列表的副本。
+调用函数send_messages() 后，将两个列表都打印出来，确认保留了原始列表中的消息。
+"""
+# 定义函数，将得到的列表内容打印
+def show_messages(message):
+    for message in message:
+        print(f"show_messages 函数:{message}")
+
+# 定义函数，用来将 list_one 的内容移动到 list_two
+def send_messages(list_one, list_two):
+    while list_one:
+        """移动列表1 下标为0的元素到message变量中"""
+        message = list_one.pop(0)                # pop(0)表示正序移动，第二次循环因为0号元素已经移走，原先的1号元素则成为0号元素
+        print(f"移动:{message} 到 列表2")      # 提示移动
+        list_two.append(message)                 # 将变量message中的元素添加到列表2中
+    print(list_one)
+    print(list_two)
+# 创建2个列表，list1有内容，list2无内容
+list1 = ['one', 'two', 'three',]
+list2 = []
+# 调用函数
+show_messages(list1)
+send_messages(list1[:], list2)  # list1[:] 创建副本，不改变原有list1内容
+print(list1)
+print(list2)
