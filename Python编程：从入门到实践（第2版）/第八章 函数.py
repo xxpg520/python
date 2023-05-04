@@ -60,7 +60,12 @@
 "Santiago, Chile"
 至少使用三个城市国家对来调用这个函数，并打印它返回的值。
 """
+def city_country(city, country):
+    full_city_country = f"{city.title()} in the:{country.title()}"
+    return full_city_country
 
+
+print(city_country('santigo', 'chile'))
 """
 练习8-7：专辑 
 编写一个名为make_album() 的函数，它创建一个᧿述音乐专辑的字典。这个函数应接受歌手的名字和专辑名，并返回一个包含这两项信息的字典。
