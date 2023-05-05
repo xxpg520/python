@@ -163,9 +163,9 @@ def show_messages(message):
 def send_messages(list_one, list_two):
     while list_one:
         """移动列表1 下标为0的元素到message变量中"""
-        message = list_one.pop(0)                # pop(0)表示正序移动，第二次循环因为0号元素已经移走，原先的1号元素则成为0号元素
-        print(f"移动:{message} 到 列表2")      # 提示移动
-        list_two.append(message)                 # 将变量message中的元素添加到列表2中
+        message = list_one.pop(0)                   # pop(0)表示正序移动，第二次循环因为0号元素已经移走，原先的1号元素则成为0号元素
+        print(f"移动:{message} 到 列表2")             # 提示移动
+        list_two.append(message)                    # 将变量message中的元素添加到列表2中
     print(list_one)
     print(list_two)
 # 创建2个列表，list1有内容，list2无内容
