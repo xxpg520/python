@@ -184,6 +184,7 @@
 # 调用这个函数三次，每次都提供不同数量的实参。
 # """
 # def sandwiches(*toppings):
+#     """本函数接收不限量的参数，并打印"""
 #     print(f"三明治包含：")
 #     for topping in toppings:
 #         print(topping)
@@ -191,16 +192,56 @@
 # sandwiches('青椒')
 # sandwiches('青椒', '牛肉')
 # sandwiches('青椒', '牛肉', '培根')
+#
+# """
+# 练习8-13：用户简介
+# 复制前面的程序user_profile.py，在其中调用build_profile() 来创建有关你的简介。
+# 调用这个函数时，指定你的名和姓，以及三个描述你的键值对。
+# """
+# def build_profile(first, last, **user_info):
+#     """本函数接收名，姓，其他信息，并将内容以字典方式存储"""
+#     user_info["first"] = first
+#     user_info["last"] = last
+#     return user_info
+#
+# user_profile = build_profile('子', '胖', 学校='湖北省水利水电职业技术学院', 专业='水利')
+# print(user_profile)
+#
+# """
+# 练习8-15：打印模型
+# 将示例printing_models.py中的函数放在一个名为printing_functions.py的文件中。
+# 在printing_models.py的开头编写一条import 语句，并修改该文件以使用导入的函数。
+# """
+# import printing_functions
+# # 创建一个列表，其中包含一些要打印的设计。
+# unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+# # 创建一个空列表，用来存放打印完成的信息。
+# completed_models = []
+# printing_functions.print_models(unprinted_designs,completed_models)
+# printing_functions.completed_models(completed_models)
+#
+# """
+# 练习8-16：导入
+# 选择一个你编写的且只包含一个函数的程序，将该函数放在另一个文件中。
+# 在主程序文件中，使用下述各种方法导入这个函数，再调用它：
+# import module_name
+# from module_name import function_name
+# from module_name import function_name as fn
+# import module_name as mn
+# from module_name import *
+# """
+# import module_name
+# module_name.function_name('peng', 'xie')
+# from module_name import function_name
+# function_name('wu', 'wang')
+# from module_name import function_name as fn
+# fn('si','li')
+# import module_name as mn
+# mn.function_name('san', 'zhang')
+# from module_name import *
+# function_name('liu', 'zhao')
 
 """
-练习8-13：用户简介
-复制前面的程序user_profile.py，在其中调用build_profile() 来创建有关你的简介。
-调用这个函数时，指定你的名和姓，以及三个描述你的键值对。
+练习8-17：函数编写指南
+选择你在本章中编写的三个程序，确保它们遵循了本节介绍的函数编写指南。
 """
-def build_profile(first, last, **user_info):
-    user_info["first"] = first
-    user_info["last"] = last
-    return user_info
-
-user_profile = build_profile('子', '胖', 学校='湖北省水利水电职业技术学院', 专业='水利')
-print(user_profile)
