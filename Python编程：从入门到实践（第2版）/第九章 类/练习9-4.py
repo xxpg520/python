@@ -27,7 +27,8 @@ class Restaurant:
 		"""输出餐厅当前状态营业"""
 		print(f"餐厅正在营业")
 
-	def set_number_served(self,number_served):
+	def set_number_served(self, number_served):
+
 		if number_served >= self.number_served:
 			self.number_served = number_served
 		else:
