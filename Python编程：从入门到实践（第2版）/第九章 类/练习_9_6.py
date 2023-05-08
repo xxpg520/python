@@ -34,9 +34,3 @@ class IceCreamStand(Restaurant):
 		print(f"冰淇淋口味有：")
 		for self.flavors in self.flavors:
 			print(f"-{self.flavors}")
-
-icecream = IceCreamStand('王子', '西式')
-icecream.flavors = ['原味', '抹茶', '草莓']
-icecream.describe_restaurant()
-icecream.open_restaurant()
-icecream.icecream_flavors()
