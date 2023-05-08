@@ -53,11 +53,4 @@ class Admin(User):
 	def show_privileges(self):
 		print(f"The current account is an administrator.\nYou can perform the following operations:")
 		for privileges in self.privileges:
-			print(f"\tprivileges")
-
-
-# 调用类对象生成实列
-user1 = Admin('fei', 'zhang', 'feizhang', 'zhangfei@gmail.com', 'sanguo')
-user1.privileges = ["an add post", "can delete post", "canban user"]
-user1.desoribe_user()
-user1.show_privileges()
+			print(f"\t{privileges}")
