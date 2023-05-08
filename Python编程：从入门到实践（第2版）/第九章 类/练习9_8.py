@@ -55,8 +55,4 @@ class Privileges:
 	def show_privileges(self):
 		print(f"\nThe current account is an administrator.\nYou can perform the following operations:")
 		for privileges in self.privileges:
-			print(f"\tprivileges")
-
-user1 = Admin('fei', 'zhang', 'zhangfei', 'zhangfei@qq.com', 2)
-user1.desoribe_user()
-user1.privileges.show_privileges()
+			print(f"\t{privileges}")
