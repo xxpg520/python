@@ -31,7 +31,7 @@ for roll_num in range(10):
     rolls.append(d10.roll_die())
 print(rolls)
 
-# 创建一个 10 面的骰子，再掷 10 次并显示结果。
+# 创建一个 20 面的骰子，再掷 10 次并显示结果。
 d20 = Die(20)
 rolls = []
 for roll_num in range(10):
