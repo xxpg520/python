@@ -1,0 +1,4 @@
+In Python you can copy code.
+In Python you can learn.
+In Python you can play games.
+In Python you can data analysis.
