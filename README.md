@@ -10,8 +10,8 @@
 
 #### 安装教程
 
-1.  Python3.11
-2.  pyCharm
+1.  Python3.12
+2.  VS Code
 3.  gitee插件
 
 #### 使用说明
