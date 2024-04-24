@@ -2,7 +2,7 @@
 tuple 元组
 特点是不能添加和删除，可以使用索引访问
 """
-classmates = ('Michael', 'Bob', 'Tracy') # 定义一个元祖
+classmates = ('Michael', 'Bob', 'Tracy') # 定义一个元组
 # 输出元组中序号为1的元素
 print(classmates[1])
 
