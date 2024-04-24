@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+In Python you can copy code.
+In Python you can learn.
+In Python you can play games.
+In Python you can data analysis.
+=======
+In Python you can data Data crawlers.
+In Python you can Web development.
+In Python you can Software testing.
+In Python you can artificial intelligence.
+>>>>>>> origin/master
