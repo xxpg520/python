@@ -1,8 +1,3 @@
-age = int(input("请输入你的年龄："))
-if age >= 18:
-    print('成年')
-else:
-    print('青少年')
 
 # 常见的布尔值
 # True: 真
@@ -34,3 +29,9 @@ else:
 # 2. 循环语句
 # 3. 逻辑运算
 # 4. 位运算
+age = None
+age = int(input("请输入你的年龄："))
+if age >= 18:
+    print('成年')
+else:
+    print('青少年')
